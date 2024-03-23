@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur:ital@0;1&family=Moul&family=Rum+Raisin&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+:root{
+    --color: #dd6017;
+}
+
+span{
+    color: var(--color);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #333;
+    height: 120px;
+}
+
+h2{
+    margin-top: 15px;
+    margin-left: 50px;
+    color: var(--color);
+    font-family: "Rum Raisin", sans-serif;
+    font-size: 35px;
+}
+
+li{
+    padding: 20px;  
+    margin-top: 20px;
+}
+
+.link-nav{
+    color: white;
+    font-size: 27px;
+}
+
+.link-nav:hover{
+    border-bottom: 2px solid var(--color);
+}
+
+.logo-terceirao{
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    margin-left:50px;
+    margin-top: 10px;
+    object-fit:cover;
+}
+
+.titulo-lista{
+    margin-top: 154px;
+    color: white;
+    font-size: 46px;
+    text-align: center;
+  }
+  
+  ol{
+    width:600px;
+  }
+  
+  ol .lista-conte{
+    font-size: 1.4rem;
+    padding: 20px 30px;
+    margin: 10px 0;
+    background-color: rgb(30,30,30);
+    cursor: pointer;
+    position:relative;
+    transition: all 0.4s;
+    z-index: 10;
+  }
+  
+  .lista-conte{
+    color: white;
+  }
+  
+  ol .lista-conte::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:5px;
+    height: 100%;
+    background-color: blue;
+    transition: all 0.4s;
+    z-index: -1;
+  }
+  
+  .lista-conte:hover::before{
+    width: 100%;
+    
+  }
+  
+  ol .lista-conte:nth-child(1)::before{
+    background-color: #faca15;
+  }
+  
+  ol .lista-conte:nth-child(2)::before{
+    background-color: #f96b2b;
+  }
+  
+  ol .lista-conte:nth-child(3)::before{
+    background-color: #ec3c5c;
+  }
+  
+  ol .lista-conte:nth-child(4)::before{
+    background-color: #692fa0;
+  }
+  
+  ol .lista-conte:nth-child(5)::before{
+    background-color: #49bfcf;
+  }
+  
+  ol .lista-conte:nth-child(6)::before{
+    background-color: #59cf49;
+  }
+  
+  ol .lista-conte:nth-child(7)::before{
+    background-color: #abcf49;
+  }
+  
+  ol .lista-conte:hover{
+    transform: translateX(20px);
+    color: black;
+  }
+
+  .listas-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+  }
+
+.texto-lista{
+    color: white;
+    font-size: 44px;
+}
+
+.inf-lista{
+    padding: 80px;
+}
+
+.produto-inicio{
+    border: none;
+    border: 2px solid var(--color);
+    font-size: 18px;
+    padding: 8px 30px;
+    border-radius: 15px;
+    margin-left: 150px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.produto-inicio:hover{
+    border: 2px solid white;
+}
+
+.video{
+    display: flex;
+}
+
+.play-img{
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.img-video{
+    background-color: aliceblue;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    height: 50px;
+    margin-left: 50px;
+}
+
+
+.video-link{
+    color: white;
+    margin-top: 12px;
+    margin-left: 15px;
+    font-size: 22px;
+}
+
+.video-link:hover{
+    color: var(--color);
+}
